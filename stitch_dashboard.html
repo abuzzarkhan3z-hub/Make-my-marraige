@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#c0c8c3", "on-primary-container": "#a4d2be", "surface-container-low": "#eef6eb", "tertiary-fixed-dim": "#c0c8c3", "primary-container": "#315c4c", "on-primary-fixed": "#002116", "surface-container-high": "#e3eadf", "surface-container-lowest": "#ffffff", "secondary-fixed": "#ffdea0", "tertiary-fixed": "#dce4df", "primary-fixed": "#beedd8", "inverse-on-surface": "#ebf3e8", "surface-bright": "#f4fcf0", "primary": "#184436", "on-error-container": "#93000a", "inverse-surface": "#2b322b", "on-tertiary-fixed-variant": "#414944", "secondary": "#745b22", "background": "#f4fcf0", "tertiary": "#373f3b", "surface-tint": "#3c6756", "on-secondary-fixed-variant": "#5a430b", "on-tertiary-container": "#c3cbc5", "secondary-container": "#ffdb96", "inverse-primary": "#a2d0bc", "on-surface": "#161d17", "tertiary-container": "#4e5652", "on-surface-variant": "#414944", "on-primary-fixed-variant": "#234e3f", "primary-fixed-dim": "#a2d0bc", "surface-dim": "#d5dcd1", "error": "#ba1a1a", "error-container": "#ffdad6", "secondary-fixed-dim": "#e4c27f", "on-error": "#ffffff", "on-secondary-container": "#795f26", "surface-container-highest": "#dde5da", "on-background": "#161d17", "on-tertiary": "#ffffff", "outline": "#717974", "on-secondary": "#ffffff", "surface": "#f4fcf0", "on-primary": "#ffffff", "surface-variant": "#dde5da", "surface-container": "#e9f0e5", "on-secondary-fixed": "#261900", "on-tertiary-fixed": "#161d1a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin-mobile": "1rem", "space-md": "1rem", "gutter": "1.5rem", "margin": "2.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "gutter-mobile": "1rem" }, "fontFamily": { "title-sm": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "display-lg": ["Playfair Display"], "label-sm": ["Inter"], "title-md": ["Inter"], "body-md": ["Inter"], "display-lg-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "headline-md": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "body-sm": ["Inter"], "headline-lg": ["Playfair Display"] }, "fontSize": { "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen selection:bg-secondary-fixed selection:text-on-secondary-fixed"><aside class="fixed left-0 top-0 h-screen w-[250px] bg-surface-container-lowest border-r border-surface-variant flex flex-col justify-between z-50 shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md border-b border-surface-container-high"><div class="flex items-center gap-space-sm"><img alt="Make My Marriage Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X-aj2uo14G-SlpzpMsoF931THEQt67vYFqFlw-S1KTOjmK17GvlhKg2Tk2-OQeuDLslufJcXxb0JdpNHrhlx9mbNysBQ2WyxSMQ_gFqRRwxyIQJwRcTd73Al68YebATxhNYC0zW0J_qrW6TD4qRNsm14ZszxCFMr3LmOfi4ebaY6sWidSP4lwonvKp6tj0uFnFlQOWkRHOXBnu822f3LpF27fsD5HGC3cMXeVkvUsIL-0a8TGOdm2iNA"/><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface leading-tight tracking-tight">Make My Marriage</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wide">Your wedding planner</span></div></div></div><nav class="flex flex-col gap-space-xs px-space-md pt-space-lg" data-active-classes="bg-surface-container-low text-primary font-medium rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-all bg-surface-container-low text-primary font-medium rounded-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="expenses" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Expenses</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="invitations" href="#"><span class="material-symbols-outlined text-[20px]">mark_email_read</span><span>Invitations</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="family-coordination" href="#"><span class="material-symbols-outlined text-[20px]">diversity_1</span><span>Family Coordination</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-body-md text-body-md" data-path="settings-&amp;-admin" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>Settings &amp; Admin</span></a></nav></div><div class="p-space-md border-t border-surface-container-high bg-surface-container-lowest"><div class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container-low transition-colors cursor-pointer"><div class="flex items-center gap-space-sm min-w-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shrink-0 ring-1 ring-surface-container-high" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7bqYcFtEdo3gFp2ZhIMEp1M7Ltlo7p7Akwi0JXmd5s86Kk8zHGhkhVwzjTeeBj2GFhhgKbB_JieeCCCtJmL542DyFv6ErTqPrReZhBjvAVcwmBZiRtd7bIwC3U8hefSFUG6h0i9-xGNbdwM-_TgH7SRmzWd4_edAUyGZKjxLE7r5zRAN5mPGE1__XvMCTjhbm5nH0jri7__5T-EtKOkBQQ6d5GoktnDllomo8e3ibNrtV0VFMXW0"/><div class="flex flex-col min-w-0"><span class="font-title-sm text-title-sm text-on-surface truncate">Abuzar Khan</span><span class="font-label-sm text-label-sm text-on-surface-variant">Admin</span></div></div><button aria-label="User Options" class="text-on-surface-variant hover:text-on-surface shrink-0 p-1" type="button"><span class="material-symbols-outlined text-[20px]">more_vert</span></button></div></div></aside><div class="pl-[250px] w-full min-h-screen bg-surface"><header class="fixed top-0 left-[250px] right-0 h-16 bg-surface/85 backdrop-blur-md z-40 border-b border-surface-container-high flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><img alt="Make My Marriage Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X-aj2uo14G-SlpzpMsoF931THEQt67vYFqFlw-S1KTOjmK17GvlhKg2Tk2-OQeuDLslufJcXxb0JdpNHrhlx9mbNysBQ2WyxSMQ_gFqRRwxyIQJwRcTd73Al68YebATxhNYC0zW0J_qrW6TD4qRNsm14ZszxCFMr3LmOfi4ebaY6sWidSP4lwonvKp6tj0uFnFlQOWkRHOXBnu822f3LpF27fsD5HGC3cMXeVkvUsIL-0a8TGOdm2iNA"/><span class="font-headline-sm text-headline-sm text-on-surface">Concierge Portal</span></div><div class="flex items-center gap-space-md"><button class="p-space-xs rounded-full text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7bqYcFtEdo3gFp2ZhIMEp1M7Ltlo7p7Akwi0JXmd5s86Kk8zHGhkhVwzjTeeBj2GFhhgKbB_JieeCCCtJmL542DyFv6ErTqPrReZhBjvAVcwmBZiRtd7bIwC3U8hefSFUG6h0i9-xGNbdwM-_TgH7SRmzWd4_edAUyGZKjxLE7r5zRAN5mPGE1__XvMCTjhbm5nH0jri7__5T-EtKOkBQQ6d5GoktnDllomo8e3ibNrtV0VFMXW0"/></div></header><main class="w-full pt-16 p-space-xl bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Bar / Header Section -->
+<section class="flex flex-col md:flex-row md:items-center justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-md text-label-md uppercase text-on-surface-variant font-semibold tracking-widest">Your Wedding Overview</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-primary text-label-sm font-label-sm font-medium">
+<span class="material-symbols-outlined text-[15px] text-secondary">favorite</span>
+          Ayesha &amp; Zayan's Wedding
+        </span>
+</div>
+<h1 class="font-display-lg text-headline-lg font-semibold text-on-surface tracking-tight mt-1">
+        Let’s make this celebration unforgettable
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+        Everything for your special day, thoughtfully organized in one place.
+      </p>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center gap-space-md shrink-0">
+<button aria-label="Notifications" class="relative w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface-variant hover:text-on-surface shadow-sm transition-all hover:bg-surface-container-low" type="button">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+<div class="relative">
+<button class="flex items-center gap-2 px-3 py-2 bg-surface-container-lowest rounded-xl shadow-sm hover:bg-surface-container-low transition-colors text-on-surface" id="profileDropdownBtn" type="button">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait photo of wedding planner coordinator smiling warmly in professional attire against soft warm studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8KyxipkbJpiXQoaBUgXi0vc5z0Sfepm7xB5vd_oGaGM6nVs2xFdiagYB8F3AjBDD3AYybUfzoTlP0CZDHHQogUe4zm-lSP12kCwCG5yWAAky1o15_eRHYLFAU7wOJ_X_F4t4ZU7LJvzaG961fLxrc8gdlhgzv-pZDWSTOP-I9xh2kJ5yJ0vdWWWNYz3ZtNRb8HyGqf8bHTUjzI2bASMpKJGHRXWWrJ-uOfTguKgvp752P68qVTlg"/>
+<span class="font-title-sm text-title-sm text-on-surface">Ayesha</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<button class="h-10 px-5 bg-primary hover:bg-primary-container text-on-primary font-title-sm text-title-sm font-medium rounded-xl shadow-sm transition-all flex items-center gap-2 active:scale-95" id="openAddExpense" type="button">
+<span class="material-symbols-outlined text-[19px]">add</span>
+<span>Add Expense</span>
+</button>
+</div>
+</section>
+<!-- Budget KPI Metric Cards -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-4">
+<!-- Total Budget -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Total Budget</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-title-md text-headline-sm font-bold text-on-surface tracking-tight">₹5,00,000</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Your planned wedding budget</p>
+</div>
+</div>
+<!-- Total Spent -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Total Spent</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="flex items-baseline gap-2">
+<span class="font-title-md text-headline-sm font-bold text-on-surface tracking-tight">₹1,42,500</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full bg-surface-container-low text-primary text-label-sm font-semibold">28.5%</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">28.5% of total budget spent</p>
+</div>
+</div>
+<!-- Remaining Budget -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Remaining Budget</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">savings</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-title-md text-headline-sm font-bold text-primary tracking-tight">₹3,57,500</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Available to spend</p>
+</div>
+</div>
+<!-- Pending Tasks -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant font-medium">Pending Tasks</span>
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4">
+<div class="font-title-md text-headline-sm font-bold text-on-surface tracking-tight">8</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tasks to complete this week</p>
+</div>
+</div>
+</section>
+<!-- Main Content Row: Upcoming Functions & Budget Visualizer -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6 items-start">
+<!-- Left: Upcoming Functions (col-span-7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Upcoming Functions</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">The special moments ahead</p>
+</div>
+<a class="inline-flex items-center gap-1 text-primary font-title-sm text-title-sm font-medium hover:underline" href="#">
+          View all functions
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Functions List -->
+<div class="flex flex-col gap-3 mt-2">
+<!-- Event 1: Mehndi -->
+<div class="group flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low text-primary flex flex-col items-center justify-center shrink-0">
+<span class="font-title-md text-title-md font-bold leading-none">18</span>
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider leading-tight mt-0.5">NOV</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Mehndi Ceremony</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[11px] font-medium">Pre-wedding</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  6:00 PM
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                  Garden Lawn, Taj Palace
+                </span>
+</div>
+</div>
+</div>
+<button aria-label="Event options" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Event 2: Nikah -->
+<div class="group flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-xl bg-secondary-container/30 text-secondary flex flex-col items-center justify-center shrink-0">
+<span class="font-title-md text-title-md font-bold leading-none">20</span>
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider leading-tight mt-0.5">NOV</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Nikah Ceremony</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-[11px] font-medium">Main Event</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  11:00 AM
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                  Grand Hall, The Oberoi
+                </span>
+</div>
+</div>
+</div>
+<button aria-label="Event options" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Event 3: Grand Reception -->
+<div class="group flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-xl bg-surface-container-low text-primary flex flex-col items-center justify-center shrink-0">
+<span class="font-title-md text-title-md font-bold leading-none">21</span>
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider leading-tight mt-0.5">NOV</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md font-semibold text-on-surface">Grand Reception</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-[11px] font-medium">Celebration</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                  7:00 PM
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+                  The Courtyard &amp; Ballroom
+                </span>
+</div>
+</div>
+</div>
+<button aria-label="Event options" class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Budget Overview Ring Chart (col-span-5) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Budget Overview</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Real-time spending proportion</p>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">calendar_today</span>
+<span>This Wedding</span>
+</div>
+</div>
+<!-- Ring Donut Visualizer -->
+<div class="flex flex-col items-center justify-center my-4 relative">
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 120 120">
+<!-- Background circle track -->
+<circle class="stroke-surface-container" cx="60" cy="60" fill="none" r="48" stroke-width="10"></circle>
+<!-- Progress indicator 28.5% -->
+<circle class="stroke-primary" cx="60" cy="60" fill="none" r="48" stroke-dasharray="301.59" stroke-dashoffset="215.63" stroke-linecap="round" stroke-width="10" style="transition: stroke-dashoffset 1s ease-in-out;"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-title-md text-headline-md font-bold text-on-surface leading-tight">28.5%</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Used</span>
+</div>
+</div>
+<div class="mt-4 px-3 py-1.5 rounded-full bg-surface-container-low text-primary text-label-sm font-label-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span>On track with planned allocations</span>
+</div>
+</div>
+<!-- Breakdown Stats List -->
+<div class="flex flex-col gap-2 pt-space-sm bg-surface-container-low/40 rounded-xl p-3">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="text-on-surface-variant">Total Budget</span>
+</div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">₹5,00,000</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="text-on-surface-variant">Total Spent</span>
+</div>
+<span class="font-title-sm text-title-sm font-semibold text-primary">₹1,42,500</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant">Remaining</span>
+</div>
+<span class="font-title-sm text-title-sm font-semibold text-on-surface">₹3,57,500</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Content Area: Recent Expenses & Family Tasks -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6 items-start">
+<!-- Left: Recent Expenses (col-span-7) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col">
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Recent Expenses</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Latest recorded expenditures</p>
+</div>
+<a class="inline-flex items-center gap-1 text-primary font-title-sm text-title-sm font-medium hover:underline" href="#">
+          View all expenses
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Table Structure -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low/50">
+<th class="py-2.5 px-3 rounded-l-lg font-semibold">Expense</th>
+<th class="py-2.5 px-3 font-semibold">Date</th>
+<th class="py-2.5 px-3 font-semibold">Status</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg font-semibold">Amount</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40">
+<!-- Expense 1 -->
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm font-medium text-on-surface">Catering Advance</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Royal Banquet Services</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">14 Nov 2024</td>
+<td class="py-3 px-3 whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-medium">
+                  Partially Paid
+                </span>
+</td>
+<td class="py-3 px-3 font-title-sm text-title-sm font-semibold text-right text-on-surface whitespace-nowrap">₹45,000</td>
+</tr>
+<!-- Expense 2 -->
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">checkroom</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm font-medium text-on-surface">Wedding Outfits</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Heritage Couture Atelier</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">12 Nov 2024</td>
+<td class="py-3 px-3 whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-low text-primary font-label-sm text-label-sm font-medium">
+                  Paid
+                </span>
+</td>
+<td class="py-3 px-3 font-title-sm text-title-sm font-semibold text-right text-on-surface whitespace-nowrap">₹28,500</td>
+</tr>
+<!-- Expense 3 -->
+<tr class="group hover:bg-surface-container-low/30 transition-colors">
+<td class="py-3 px-3">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[18px]">apartment</span>
+</div>
+<div>
+<div class="font-title-sm text-title-sm font-medium text-on-surface">Venue Booking</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">The Oberoi Grand Hall</div>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">10 Nov 2024</td>
+<td class="py-3 px-3 whitespace-nowrap">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-medium">
+                  Partially Paid
+                </span>
+</td>
+<td class="py-3 px-3 font-title-sm text-title-sm font-semibold text-right text-on-surface whitespace-nowrap">₹35,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Right: Family Tasks (col-span-5) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-2xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Family Tasks</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Coordinated family checklist</p>
+</div>
+<a class="inline-flex items-center gap-1 text-primary font-title-sm text-title-sm font-medium hover:underline" href="#">
+            View all tasks
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Task Items -->
+<div class="flex flex-col gap-3 mt-1">
+<!-- Task 1 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<label class="flex items-center gap-3 cursor-pointer min-w-0">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-title-sm text-title-sm text-on-surface font-medium truncate">Confirm guest count</span>
+</label>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium">Due in 2 days</span>
+<span class="w-6 h-6 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[11px] flex items-center justify-center font-bold">FK</span>
+</div>
+</div>
+<!-- Task 2 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<label class="flex items-center gap-3 cursor-pointer min-w-0">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-title-sm text-title-sm text-on-surface font-medium truncate">Finalize invitation wording</span>
+</label>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container/50 text-secondary font-label-sm text-[11px] font-semibold">Due tomorrow</span>
+<span class="w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] flex items-center justify-center font-bold">AK</span>
+</div>
+</div>
+<!-- Task 3 -->
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<label class="flex items-center gap-3 cursor-pointer min-w-0">
+<input class="w-4 h-4 rounded text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-title-sm text-title-sm text-on-surface font-medium truncate">Confirm transport</span>
+</label>
+<div class="flex items-center gap-2 shrink-0">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium">Due in 4 days</span>
+<span class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[11px] flex items-center justify-center font-bold">ZK</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Add Task Button -->
+<button class="mt-4 w-full py-2.5 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-title-sm text-title-sm font-medium transition-colors flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Add Task</span>
+</button>
+</div>
+</section>
+<!-- Interactive Quick Modal (Hidden by default, triggered by Add Expense button) -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="addExpenseModal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-2xl p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between pb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Record New Expense</h3>
+<button class="text-on-surface-variant hover:text-on-surface p-1 rounded-lg" id="closeExpenseModal" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-3.5" id="expenseForm" onsubmit="event.preventDefault(); document.getElementById('addExpenseModal').classList.add('hidden'); document.getElementById('addExpenseModal').classList.remove('flex');">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium block mb-1">Expense Title</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low" placeholder="e.g. Floral Stage Decoration" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium block mb-1">Amount (₹)</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low" placeholder="50,000" required="" type="number"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium block mb-1">Category</label>
+<select class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low">
+<option>Venue &amp; Decor</option>
+<option>Catering &amp; Sweets</option>
+<option>Photography</option>
+<option>Outfits &amp; Jewelry</option>
+<option>Entertainment</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium block mb-1">Payment Status</label>
+<select class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low">
+<option>Paid</option>
+<option>Partially Paid</option>
+<option>Pending</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium block mb-1">Date</label>
+<input class="w-full h-10 px-3 bg-surface-container-lowest rounded-lg text-body-md font-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary/20 bg-surface-container-low" type="date" value="2024-11-15"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-2.5 pt-2">
+<button class="px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container font-title-sm text-title-sm" id="cancelExpenseModal" type="button">Cancel</button>
+<button class="px-5 py-2 bg-primary hover:bg-primary-container text-on-primary rounded-lg font-title-sm text-title-sm font-medium shadow-sm" type="submit">Save Expense</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+    // Simple Modal and Task Toggle Interactions
+    const openBtn = document.getElementById('openAddExpense');
+    const closeBtn = document.getElementById('closeExpenseModal');
+    const cancelBtn = document.getElementById('cancelExpenseModal');
+    const modal = document.getElementById('addExpenseModal');
+
+    function toggleModal(show) {
+      if (show) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      } else {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    if (openBtn) openBtn.addEventListener('click', () => toggleModal(true));
+    if (closeBtn) closeBtn.addEventListener('click', () => toggleModal(false));
+    if (cancelBtn) cancelBtn.addEventListener('click', () => toggleModal(false));
+  </script>
+</div></main></div></body></html>
